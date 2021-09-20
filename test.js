@@ -34,7 +34,7 @@ test('should return 401 if Authorization Header is absent', async () => {
 	// IT PASSED ! THIS IS A PROBLEM !
 	// Actually, it should have been like below and shouldn't have passed: 
 	// Expected: [ApiError: No Auth Token]
-    // Received: [Error: No Auth token]
+	// Received: [Error: No Auth token]
 	// This does not make sense since the ApiError instance is not the same with the Error instance!
 });
 
