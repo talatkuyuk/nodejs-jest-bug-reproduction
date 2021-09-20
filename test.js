@@ -18,7 +18,7 @@ const auth = async (req, res, next) => {
 };
 
 
-test('should return 401 if Authorization Header is absent', async () => {
+test('should return ApiError if Authorization Header is absent', async () => {
 	const req = httpMocks.createRequest();
 	const res = httpMocks.createResponse();
 	const next = jest.fn();
