@@ -39,7 +39,7 @@ test('should return ApiError if Authorization Header is absent', async () => {
 	// This does not make sense since the ApiError instance is not the same with the Error instance!
 });
 
-it('should return ApiError if Authorization Header is absent', async () => {
+it('should return fail correctly if the wrong error type is asserted', async () => {
   // This test fails correctly as it should
 	const req = httpMocks.createRequest();
 	const res = httpMocks.createResponse();
